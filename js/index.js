@@ -18,9 +18,7 @@ $(function(){
         controlsCurrentColor:"#ff6600",//当前控制按钮的颜色
         isShowNum:true //是否显示数字
     });
-
-    
-	/*图书电子书小轮播
+    /*图书电子书小轮播*/
     $('#ebooks-banner').tyslide({
         boxh:223,//盒子的高度
         w:332,//盒子的宽度
@@ -32,9 +30,8 @@ $(function(){
         controlsH:2,//控制按钮高度
         controlsColor:"#d7d7d7",//普通控制按钮的颜色
         controlsCurrentColor:"#00ff00",//当前控制按钮的颜色
-    });*/
-    
-    /* 新书列表手风琴效果
+    });
+    /* 新书列表手风琴效果*/
     $('.ebooks .right-box ul > li').mouseenter(function(){
         //所有兄弟：隐藏属性 显示标题
         $(this).siblings().find('.desc').hide();//隐藏属性
@@ -42,10 +39,7 @@ $(function(){
 
         //当前：隐藏标题 显示详情
         $(this).find('ebooks-title').hide();//隐藏标题
-        $(this).find('.desc').show();//显示详情
-
-
-        
-    })*/
+        $(this).find('.desc').show();//显示详情      
+    })
 
 })
