@@ -119,5 +119,39 @@ $(function(){
         $("html,body").animate({scrollTop:"0px"},200);
 
     }); 
+    
+    $('.qr-code .ticket').hover(function(){
+        $('.qr-code div').stop(true).animate({
+            left: '-100px'
+        })
+    },function(){
+            $('.qr-code div').stop(true).animate({
+                left: 0
+            })
+    });
+
+    /*顶部搜索框交互*/
+    $(document).scroll(function(){
+        var topDistance = $('html,body').scrollTop();
+        if(topDistance > 500){
+            $('.top-search-box').slideDown(300)
+            
+        }else{
+            $('.top-search-box').slideUp(300)
+        }
+    });
+
+
+    /*楼梯跳转 */
+    $('.floor li').click(function(){
+        //获取索引
+        var index = $(this).index();
+        //选中
+        var topOffset = $('.floorBox').eq(index).offset().top;
+        //让滚动条滚到这个位置
+        $('html,body').animate({
+            scrollTop:topOffset - 50
+        })
+    })
 
 });

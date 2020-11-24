@@ -885,6 +885,8 @@ margin-right: 10px;
     background-color: pink;
 }
 
+
+
 /*--*******************10.推广商品*******************--*/
 .promotion{
     height: 686px;
@@ -1005,6 +1007,99 @@ margin-right: 10px;
 }
 
 
+/*--*******************二维码*******************--*/
+.qr-code{
+    width: 40px;
+    height: 180px;
+    /*定位*/
+    position:fixed;
+    top: 185px;
+    right: 0;
+}
+.qr-code p{
+    width: 40px;
+    height: 40px;
+    background-color: pink;
+}
+.qr-code p img{
+    width: 100%;
+    height: 100%;
+}
+.qr-code p:nth-child(2){
+    height: 100px;
+    background-color: deeppink;
+} 
+.qr-code div{
+    /*定位*/
+    position: absolute;
+    top:40px;
+    left: 0;
+    z-index: -10;
+}
+
+/*--*******************顶部搜索框*******************--*/
+.top-search-box{
+    width: 1800px;
+    height: 50px;
+    line-height: 50px;
+    background-color:rgba(255, 123, 0, .8);
+
+    /*定位*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 600px;
+
+    /*默认隐藏*/
+    display: none;
+}
+.top-search-box .search-box{
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #ff6700;
+    margin: 10 auto;
+    background-image: url('../img/bgicon.png');
+    padding-right: 85px;
+    background-position-x: 356px -111px;
+}
+.top-search-box .search-box input{
+    height: 26px;
+    width: 360px;
+    border: 2px solid #ff6700;
+    outline: none;
+    text-indent: 10px;
+}
+
+
+/*--*******************楼层滚动样式*******************--*/
+.floor{
+    width: 40px;
+    height: 200px;
+    background-color: #f2f2f2;
+    position: fixed;
+    margin-left: 50%;
+    left: -640px;
+    top: 200px;
+}
+.floor li{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    /*设置过度效果*/
+    transition:all 0.3s;
+}
+.floor li:hover{
+    width: 80px;
+    color: #fff;
+    background-color: #93d56f;
+}
+
+.floor li img{
+    width: 40px;
+    height: 40px;
+}
+
 /*--*******************返回顶部*******************--*/
 .back_top{
 	width:30px;
@@ -1018,4 +1113,3 @@ margin-right: 10px;
 	/*默认隐藏*/
 	display:none;
 	}
-
