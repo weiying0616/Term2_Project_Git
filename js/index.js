@@ -114,6 +114,8 @@ $(function(){
 
     });
 
+
+    /*二维码*/
     $(".back_top").click(function(){ //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
 
         $("html,body").animate({scrollTop:"0px"},200);
