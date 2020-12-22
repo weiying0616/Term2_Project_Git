@@ -48,16 +48,17 @@ $('.change').click(function(){
     })
 })*/
 
-//左右滑动的版本
+/*左右滑动的版本*/
 var index = 0;
 $('.change').click(function(){
     //自增
     index++;
+
+
     //边界判断
     //让里面的inner-box 运动
     $('.inner-box').stop(true).animate({left: -index * 1200},function(){
-        console.log('2:',index)
-        if(index === 3){
+        if(index > 2){
             index = 0;
             $('.inner-box').css('left',0);
         }

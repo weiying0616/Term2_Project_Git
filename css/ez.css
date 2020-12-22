@@ -54,7 +54,6 @@
 
 .guess-you-like{
     height: 456px;
-    background-color: red;
     margin: 110px auto;
 }
 
@@ -74,7 +73,6 @@
 .guess-you-like-content{
     width: 1200px;
     height: 500px;
-    background-color: green;
 }
 
 
@@ -102,7 +100,7 @@
     width: 1200px;
     height: 500px;
 
-    /*左右版本需要增加的*/
+    /*左右版本需要的增加*/
     float: left;
 
 }

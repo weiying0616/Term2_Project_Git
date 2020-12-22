@@ -170,5 +170,6 @@ $(function(){
       $('.goodsCount').text(goodsCount);
 }
       getGoodsCount();//页面加载调用一次
+     
   
 })
